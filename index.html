@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10 top-0">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-bold text-xl text-indigo-600">My Portfolio</a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+                <a href="#education" class="hover:text-indigo-600 transition">Education</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero & About Section -->
+    <header id="about" class="pt-32 pb-16 px-6">
+        <div class="max-w-4xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+                     <span class="text-indigo-600">YU WAH AUNG</span>
+                </h1>
+                <h2 class="text-xl font-semibold text-slate-700 mb-4">
+                    Bachelor of Science in Information Technology
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-2xl">
+                    I am a fresh graduate student actively seeking software engineering internships. I have a strong
+                    foundation in computer science fundamentals, data structures, and modern web technologies. I am
+                    passionate about writing clean, efficient code and eager to contribute to a collaborative
+                    engineering team.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                
+                    <a href="www.linkedin.com/in/yu-wah" target="_blank" rel="noopener noreferrer"
+                        class="bg-white border border-slate-300 text-slate-700 px-6 py-2 rounded-lg font-medium hover:bg-slate-50 transition">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-16 bg-white px-6 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Technical Skills</h2>
+            <ul class="list-disc list-inside text-lg text-slate-700 grid grid-cols-1 md:grid-cols-2 gap-y-3">
+                <!-- Add or remove skills based on your actual stack -->
+                <li>JavaScript (ES6+)</li>
+                <li>Java</li>
+                <li>React Native</li>
+                <li>PHP</li>
+                <li>HTML5 / CSS3</li>
+                <li>SQL / Relational Databases</li>
+                <li>Git / Version Control</li>
+                <li>AWS (Basic)</li>
+                <li>RESTful APIs</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-slate-50 px-6 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Technical Projects</h2>
+
+            <div class="space-y-8">
+                <!-- Music Player -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div
+                        class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center shrink-0 text-indigo-600 text-3xl">
+                        🎵
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Interactive Media Player</h3>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">JavaScript</span>
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">• HTML5 Audio
+                                API</span>
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">• DOM
+                                Manipulation</span>
+                        </div>
+                        <p class="text-slate-700 mb-4">
+                             A custom, browser-based audio player utilizing the native HTML5 Audio API.
+                            Focused heavily on <strong>state management</strong> to handle dynamic track queuing,
+                            play/pause toggling.
+                        </p>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
+                            <li>Implemented event listeners to track time-updates and update the UI asynchronously.</li>
+                            <li>Designed a clean, responsive interface using CSS/Tailwind for seamless cross-device
+                                playback.</li>
+                            <li>Handled edge cases such as end-of-track progression and error handling for broken media
+                                links.</li>
+                        </ul>
+                        <a href="https://frolicking-blini-e85892.netlify.app/"
+                            class="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition">
+                            View the project;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Stopwatch -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div
+                        class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center shrink-0 text-indigo-600 text-3xl">
+                        ⏱️
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Precision Web Stopwatch</h3>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">JavaScript</span>
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">• Async
+                                Logic</span>
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">• Algorithms</span>
+                        </div>
+                        <p class="text-slate-700 mb-4">
+                            Developed a highly accurate timing application that calculates milliseconds using
+                            JavaScript's native Date objects and interval methods. 
+                        </p>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
+                            <li>Utilized <code class="bg-slate-100 px-1 rounded text-pink-600">setInterval</code> and
+                                timestamp differentials to prevent standard browser throttling drift.</li>
+                            <li>Engineered a lap-tracking system that dynamically updates the DOM and stores lap data
+                                arrays in memory.</li>
+                            <li>Created a modular code structure, separating the timing logic from the UI rendering
+                                logic.</li>
+                        </ul>
+                        <a href="https://fascinating-griffin-75e8d5.netlify.app/"
+                            class="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition">
+                            view the project;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white px-6 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Education </h2>
+
+            <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Bachelor of Science in Information Technology 
+                        <p class="text-lg text-indigo-600 font-medium">Payap University</p>
+                    </div>
+                    <span class="text-slate-500 font-medium mt-2 md:mt-0">Expected Graduation : November 2026</span>
+                </div>
+
+                <p class="text-slate-700 mb-4">
+                    Currently just pursued my bachelor's degree. My academic background has provided me with a rigorous
+                    understanding of software engineering principles, algorithmic complexity, and system architecture.
+                </p>
+
+                <div>
+                    <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">Relevant Technical
+                        Coursework</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-600">
+                        <!-- Update these with classes you have actually taken -->
+                        <div class="flex items-center gap-2"><span class="text-indigo-400">▹</span> Data Structures &
+                            Algorithms</div>
+                        <div class="flex items-center gap-2"><span class="text-indigo-400">▹</span> Software Engineering
+                            Principles</div>
+                        <div class="flex items-center gap-2"><span class="text-indigo-400">▹</span> Database Management
+                            Systems</div>
+                        <div class="flex items-center gap-2"><span class="text-indigo-400">▹</span> Object-Oriented
+                            Programming</div>
+                        <div class="flex items-center gap-2"><span class="text-indigo-400">▹</span> Web & Mobile
+                            Development</div>
+                        <div class="flex items-center gap-2"><span class="text-indigo-400">▹</span> Systems Architecture
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+        <div class="max-w-4xl mx-auto px-6">
+            <p>&copy; 2026 Yu Wah. Built with HTML & Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
